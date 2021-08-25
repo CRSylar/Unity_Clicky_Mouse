@@ -112,6 +112,8 @@ MonoBehaviour:
   pointValue: 0
   explosions:
   - {fileID: 4758139293545943008, guid: c7ad2532a6eeb40b59033c75e71fa054, type: 3}
+  blipAudio: {fileID: 8300000, guid: f5b84633030ef498bbe663b873e6a115, type: 3}
+  boomAudio: {fileID: 8300000, guid: c371a6a18549543939f6f7cdb060a461, type: 3}
 --- !u!54 &6071285985932780630
 Rigidbody:
   m_ObjectHideFlags: 0

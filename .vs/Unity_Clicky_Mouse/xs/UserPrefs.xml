@@ -1,17 +1,18 @@
-﻿<Properties StartupConfiguration="{5F6DA53C-7DB0-DD75-18EB-D95DAB25B18D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Target.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Target.cs" Line="59" Column="42" />
-      <File FileName="Assets/Scripts/NewMonoBehaviour.cs" Line="48" Column="14" />
-      <File FileName="Assets/Scripts/DiffucultyButton.cs" Line="29" Column="37" />
+      <File FileName="Assets/Scripts/Target.cs" Line="56" Column="5" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="15" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Unity_Clicky_Mouse" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Target.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="GameManager.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

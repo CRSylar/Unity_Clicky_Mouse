@@ -14,6 +14,8 @@ public class Target : MonoBehaviour
 
 	public int pointValue;
 	public ParticleSystem[] explosions;
+	public AudioClip blipAudio;
+	public AudioClip boomAudio;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -38,8 +40,6 @@ public class Target : MonoBehaviour
 	{
 		if ( gameManager.isGameActive )
 		{
-			Destroy( gameObject );
-
 			var explosionIdx = Random.Range( 0, explosions.Length );
 			Instantiate( explosions[explosionIdx],
 					transform.position,
@@ -47,9 +47,15 @@ public class Target : MonoBehaviour
 
 			if (gameObject.CompareTag("Bad"))
 			{
+				gameManager.audioSource.PlayOneShot( boomAudio, 5.0f );
+				//audioSource.PlayOneShot( boomAudio, 1.0f );
 				gameManager.GameOver();
 			}
+			else
+				gameManager.audioSource.PlayOneShot( blipAudio, 12.0f );
+				//audioSource.PlayOneShot( blipAudio, 1.0f );
 
+			Destroy( gameObject );
 			gameManager.UpdateScore( pointValue );
 		}
 	}

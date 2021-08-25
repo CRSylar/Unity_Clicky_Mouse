@@ -115,6 +115,8 @@ MonoBehaviour:
   - {fileID: 3190333381650574219, guid: 055c650d1a895444eaee3f022196b76e, type: 3}
   - {fileID: 7139801151867032177, guid: c55b2af1ed45243769e09c15aac99ca4, type: 3}
   - {fileID: 5726535115615582525, guid: a78214f19b28c4d6d968ace5b5454be8, type: 3}
+  blipAudio: {fileID: 8300000, guid: f5b84633030ef498bbe663b873e6a115, type: 3}
+  boomAudio: {fileID: 8300000, guid: c371a6a18549543939f6f7cdb060a461, type: 3}
 --- !u!54 &-245421529140035819
 Rigidbody:
   m_ObjectHideFlags: 0

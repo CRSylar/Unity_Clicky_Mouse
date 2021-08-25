@@ -8,12 +8,13 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-	public List<GameObject> targets;
-	public TextMeshProUGUI scoreText;
-	public TextMeshProUGUI titleScreen;
-	public TextMeshProUGUI gameOverText;
-	public Button restartButton;
-	public bool isGameActive;
+	public List<GameObject>	targets;
+	public TextMeshProUGUI	scoreText;
+	public TextMeshProUGUI	titleScreen;
+	public TextMeshProUGUI	gameOverText;
+	public Button			restartButton;
+	public AudioSource		audioSource;
+	public bool				isGameActive;
 
 	private int score;
 	private float spawnRate = 1.0f;
@@ -21,7 +22,7 @@ public class GameManager : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		
+
 	}
 
 	// Update is called once per frame
@@ -40,11 +41,14 @@ public class GameManager : MonoBehaviour
 	{
 		restartButton.gameObject.SetActive( true );
 		gameOverText.gameObject.SetActive( true );
+
+		StartCoroutine( StopAmbientMusic() );
 		isGameActive = false;
 	}
 
 	public void StartGame(int difficulty)
 	{
+		audioSource.gameObject.SetActive( true );
 		spawnRate /= difficulty;
 		titleScreen.gameObject.SetActive( false );
 		isGameActive = true;
@@ -66,5 +70,11 @@ public class GameManager : MonoBehaviour
 			int index = Random.Range( 0, targets.Count );
 			Instantiate( targets[index] );
 		}
+	}
+
+	IEnumerator StopAmbientMusic()
+	{
+		yield return new WaitForSeconds( 2 );
+		audioSource.gameObject.SetActive( false );
 	}
 }
