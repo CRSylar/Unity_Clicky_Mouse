@@ -109,8 +109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff4c72142ff614be8a10f1539c1a33f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 10
-  maxSpeed: 20
+  pointValue: 10
+  explosions:
+  - {fileID: 1477439538253375342, guid: 308700a3870934e98949f6f13bae9f85, type: 3}
+  - {fileID: 3190333381650574219, guid: 055c650d1a895444eaee3f022196b76e, type: 3}
+  - {fileID: 7139801151867032177, guid: c55b2af1ed45243769e09c15aac99ca4, type: 3}
+  - {fileID: 5726535115615582525, guid: a78214f19b28c4d6d968ace5b5454be8, type: 3}
 --- !u!54 &-245421529140035819
 Rigidbody:
   m_ObjectHideFlags: 0
