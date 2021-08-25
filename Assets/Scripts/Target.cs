@@ -47,13 +47,11 @@ public class Target : MonoBehaviour
 
 			if (gameObject.CompareTag("Bad"))
 			{
+				gameManager.UpdateLives( -1 );
 				gameManager.audioSource.PlayOneShot( boomAudio, 5.0f );
-				//audioSource.PlayOneShot( boomAudio, 1.0f );
-				gameManager.GameOver();
 			}
 			else
 				gameManager.audioSource.PlayOneShot( blipAudio, 12.0f );
-				//audioSource.PlayOneShot( blipAudio, 1.0f );
 
 			Destroy( gameObject );
 			gameManager.UpdateScore( pointValue );
