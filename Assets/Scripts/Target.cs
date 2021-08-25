@@ -56,6 +56,8 @@ public class Target : MonoBehaviour
 
 	private void OnTriggerEnter( Collider other )
 	{
+		if (gameManager.isGameActive)
+			gameManager.UpdateScore( -pointValue );
 		Destroy( gameObject );
 	}
 

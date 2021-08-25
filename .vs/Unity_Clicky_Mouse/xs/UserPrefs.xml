@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{5F6DA53C-7DB0-DD75-18EB-D95DAB25B18D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DiffucultyButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Target.cs">
     <Files>
-      <File FileName="Assets/Scripts/Target.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/NewMonoBehaviour.cs" Line="42" Column="46" />
-      <File FileName="Assets/Scripts/DiffucultyButton.cs" Line="8" Column="2" />
+      <File FileName="Assets/Scripts/Target.cs" Line="59" Column="42" />
+      <File FileName="Assets/Scripts/NewMonoBehaviour.cs" Line="48" Column="14" />
+      <File FileName="Assets/Scripts/DiffucultyButton.cs" Line="29" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +11,7 @@
           <Node name="Unity_Clicky_Mouse" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DiffucultyButton.cs" selected="True" />
+                <Node name="Target.cs" selected="True" />
               </Node>
             </Node>
           </Node>
