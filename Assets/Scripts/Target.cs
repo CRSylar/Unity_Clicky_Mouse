@@ -36,7 +36,7 @@ public class Target : MonoBehaviour
 	{
 	}
 
-	private void OnMouseDown()
+	public void DestroyTarget()
 	{
 		if ( gameManager.isGameActive )
 		{
